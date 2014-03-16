@@ -1,0 +1,19 @@
+{
+  "name": "jade-fullcalendar",
+  "version": "0.0.0",
+  "authors": [
+    "jonmiles <jonathandanielmiles@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullcalendar": "~1.6.4"
+  }
+}

@@ -8,9 +8,22 @@ html
 		#calendar
 
 		script(type='text/javascript', src='/bower_components/jquery/jquery.js')
+		script(type='text/javascript', src='/bower_components/jquery-ui/ui/jquery-ui.js')
 		script(type='text/javascript', src='/bower_components/fullcalendar/fullcalendar.js')
 		script.
 			var events =  !{JSON.stringify(data)}
 			$('#calendar').fullCalendar({
-				events: events
+				events: events,
+				editable: true,
+				eventDrop: function (event, dayDelta, minuteDelta, allDay, revertFunc) {
+
+					// TODO Replace alert with server call to update calendar event
+					alert(
+						event.title + " was moved " +
+						dayDelta + " days and " +
+						minuteDelta + " minutes."
+					);
+				},
+
+				defaultView: 'agendaWeek'
 			});

@@ -17,5 +17,8 @@
     "fullcalendar": "~1.6.4",
     "jquery-ui": "~1.10.4",
     "jquery": "~2.1.0"
+  },
+  "resolutions": {
+    "jquery": "~1.10.2"
   }
 }
